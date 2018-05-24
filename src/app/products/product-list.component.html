@@ -27,7 +27,7 @@
                         <th class="text-center">Code</th>
                         <th class="text-center">Avilable</th>
                         <th class="text-center">Price</th>
-                        <th class="text-center">5 Star Rating</th>
+                        <th>5 Star Rating</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,7 +39,9 @@
                         <td>{{product.productCode | lowercase | convertToSpaces:'-'}}</td>
                         <td>{{product.releaseDate}}</td>
                         <td>{{product.price | currency:'USD':true:'1.2-2'}}</td>
-                        <td>{{product.starRating}}</td>
+                        <td>
+                            <pm-star [rating]="product.starRating" (ratingClicked)="onRatingClicked($event)"></pm-star>
+                        </td>
 
                     </tr>
                 </tbody>
