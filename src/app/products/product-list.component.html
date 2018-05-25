@@ -4,18 +4,18 @@
     </div>
     <div class="panel-body">
         <div class="row">
-            <div class="col-md-2" style="margin-left: -90px">Filter By:</div>
+            <div class="col-md-2">Filter By:</div>
             <div class="col-md-4">
                 <input [(ngModel)]="listFilter" type="text">
             </div>
         </div>
         <div class="row">
             <div class="col-md-2">
-                <h3 style="margin-left: -128px">Filtered By: {{listFilter}}</h3>
+                <h3>Filtered By: {{listFilter}}</h3>
             </div>
         </div>
         <div class="table-responsive">
-            <table class="table" *ngIf="products && products.length" style="margin-left: -118px;">
+            <table class="table" *ngIf="products && products.length">
                 <thead>
                     <tr>
                         <th class="text-center">
