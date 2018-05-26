@@ -1,6 +1,6 @@
 Please Visit Deployed Version On
 
-https://tamerhussien.github.io/APM/dist/welcome
+https://tamerhussien.github.io/APM/dist/index.html
 
 
 # APM
