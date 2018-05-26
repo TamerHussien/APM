@@ -9,7 +9,6 @@ import { WelcomeComponent } from './home/welcome.component';
 import { ProductModule } from './products/product.module';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,9 +24,8 @@ import { ProductModule } from './products/product.module';
       {path: '**', redirectTo: 'welcome', pathMatch: 'full'},
     ]),
     ProductModule,
-    
   ],
-  providers: [ProductGuardService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
