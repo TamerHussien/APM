@@ -10,7 +10,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class ProductService {
 
-    productURL = './api/products/products.json';
+    productURL = 'https://tamerhussien.github.io/APM/dist/api/products/products.json';
 
     constructor (private _http: HttpClient) {}
 
